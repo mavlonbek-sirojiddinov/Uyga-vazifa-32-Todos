@@ -13,6 +13,8 @@ elSiteForm.addEventListener("submit", (e) => {
 
   products.push(elSiteInputvalue)
 
+  window.localStorage.setItem('key', products)
+
   elPradList.textContent = ""
 
   for(var product of products) {
@@ -45,3 +47,7 @@ elCheckForm.addEventListener("submit", (e) => {
     elCheckResult.style.color = 'red'
   }
 });
+
+function locbtn() {
+  window.localStorage.clear()
+}

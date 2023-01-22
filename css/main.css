@@ -330,6 +330,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  background-image: url(../img/istockphoto-1161683700-170667a.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 img {
@@ -369,7 +372,7 @@ h1 {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  height: 120px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -378,7 +381,7 @@ h1 {
   padding-right: 40px;
   padding: 15px 0;
   border: 1px solid rgb(243, 243, 243);
-  box-shadow: 5px 5px 8px rgba(128, 128, 128, 0.651);
+  box-shadow: 5px 5px 8px white;
 }
 
 .wrapper {
@@ -388,9 +391,15 @@ h1 {
 }
 
 .site-input {
+  color: #fff;
   outline: none;
   border: none;
   margin-right: 40px;
+  background: transparent;
+}
+
+::-webkit-input-placeholder {
+  color: gray;
 }
 
 .btn-add {
@@ -428,27 +437,55 @@ h1 {
 }
 
 .site-input-check {
+  color: #fff;
   outline: none;
   border: none;
   margin-right: 40px;
+  background: transparent;
+}
+
+.local-btn {
+  padding: 6px 15px;
+  border: none;
+  background-color: aqua;
+  color: rgb(23, 0, 226);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .btn-add:hover {
   transform: scale(1.2);
   transition: 0.2s;
+  box-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua;
 }
 
 .btn-check:hover {
   transform: scale(1.2);
   transition: 0.2s;
+  box-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua;
 }
 
 .btn-add:active {
   transition: 0.1s;
   transform: scale(1);
+  box-shadow: none;
 }
 
 .btn-check:active {
   transition: 0.1s;
   transform: scale(1);
+  box-shadow: none;
+}
+
+.local-btn:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+  box-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua;
+}
+
+.local-btn:active {
+  transition: 0.1s;
+  transform: scale(1);
+  box-shadow: none;
 }/*# sourceMappingURL=main.css.map */
